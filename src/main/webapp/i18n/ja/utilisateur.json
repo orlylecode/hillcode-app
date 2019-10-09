@@ -1,0 +1,24 @@
+{
+  "hillcodeApp": {
+    "utilisateur": {
+      "home": {
+        "title": "Utilisateurs",
+        "createLabel": "Utilisateur を追加",
+        "createOrEditLabel": "Utilisateurを追加または編集",
+        "notFound": "No Utilisateurs found"
+      },
+      "created": "A new Utilisateur is created with identifier {{ param }}",
+      "updated": "A Utilisateur is updated with identifier {{ param }}",
+      "deleted": "A Utilisateur is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Utilisateur {{ id }}を削除してもよろしいですか？"
+      },
+      "detail": {
+        "title": "Utilisateur"
+      },
+      "speudo": "Speudo",
+      "email": "Email",
+      "commentaires": "Commentaires"
+    }
+  }
+}

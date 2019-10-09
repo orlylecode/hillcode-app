@@ -1,0 +1,55 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="article">
+            <h2><span jhiTranslate="hillcodeApp.article.detail.title">Article</span> {{article.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="hillcodeApp.article.cheminFichier">Chemin Fichier</span></dt>
+                <dd>
+                    <span>{{article.cheminFichier}}</span>
+                </dd>
+                <dt><span jhiTranslate="hillcodeApp.article.auteur">Auteur</span></dt>
+                <dd>
+                    <span>{{article.auteur}}</span>
+                </dd>
+                <dt><span jhiTranslate="hillcodeApp.article.dateCreation">Date Creation</span></dt>
+                <dd>
+                    <span>{{article.dateCreation}}</span>
+                </dd>
+                <dt><span jhiTranslate="hillcodeApp.article.dateDerniereModif">Date Derniere Modif</span></dt>
+                <dd>
+                    <span>{{article.dateDerniereModif}}</span>
+                </dd>
+                <dt><span jhiTranslate="hillcodeApp.article.description">Description</span></dt>
+                <dd>
+                    <span>{{article.description}}</span>
+                </dd>
+                <dt><span jhiTranslate="hillcodeApp.article.jaime">Jaime</span></dt>
+                <dd>
+                    <span>{{article.jaime}}</span>
+                </dd>
+                <dt><span jhiTranslate="hillcodeApp.article.jaimepas">Jaimepas</span></dt>
+                <dd>
+                    <span>{{article.jaimepas}}</span>
+                </dd>
+                <dt><span jhiTranslate="hillcodeApp.article.partage">Partage</span></dt>
+                <dd>
+                    <span>{{article.partage}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/article', article.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

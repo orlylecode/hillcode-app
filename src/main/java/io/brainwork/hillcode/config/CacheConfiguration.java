@@ -42,6 +42,11 @@ public class CacheConfiguration {
             createCache(cm, io.brainwork.hillcode.domain.User.class.getName());
             createCache(cm, io.brainwork.hillcode.domain.Authority.class.getName());
             createCache(cm, io.brainwork.hillcode.domain.User.class.getName() + ".authorities");
+            createCache(cm, io.brainwork.hillcode.domain.Article.class.getName());
+            createCache(cm, io.brainwork.hillcode.domain.Article.class.getName() + ".commentaires");
+            createCache(cm, io.brainwork.hillcode.domain.Commentaire.class.getName());
+            createCache(cm, io.brainwork.hillcode.domain.Utilisateur.class.getName());
+            createCache(cm, io.brainwork.hillcode.domain.Utilisateur.class.getName() + ".commentaires");
             // jhipster-needle-ehcache-add-entry
         };
     }

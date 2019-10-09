@@ -1,0 +1,25 @@
+{
+  "hillcodeApp": {
+    "commentaire": {
+      "home": {
+        "title": "Commentaires",
+        "createLabel": "Commentaire を追加",
+        "createOrEditLabel": "Commentaireを追加または編集",
+        "notFound": "No Commentaires found"
+      },
+      "created": "A new Commentaire is created with identifier {{ param }}",
+      "updated": "A Commentaire is updated with identifier {{ param }}",
+      "deleted": "A Commentaire is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Commentaire {{ id }}を削除してもよろしいですか？"
+      },
+      "detail": {
+        "title": "Commentaire"
+      },
+      "dateCreation": "Date Creation",
+      "commentaire": "Commentaire",
+      "article": "Article",
+      "utilisateur": "Utilisateur"
+    }
+  }
+}

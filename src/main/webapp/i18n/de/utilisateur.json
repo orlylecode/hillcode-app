@@ -1,0 +1,24 @@
+{
+  "hillcodeApp": {
+    "utilisateur": {
+      "home": {
+        "title": "Utilisateurs",
+        "createLabel": "Utilisateur erstellen",
+        "createOrEditLabel": "Utilisateur erstellen oder bearbeiten",
+        "notFound": "No Utilisateurs found"
+      },
+      "created": "Utilisateur erstellt mit ID {{ param }}",
+      "updated": "Utilisateur aktualisiert mit ID {{ param }}",
+      "deleted": "Utilisateur gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Utilisateur {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Utilisateur"
+      },
+      "speudo": "Speudo",
+      "email": "Email",
+      "commentaires": "Commentaires"
+    }
+  }
+}

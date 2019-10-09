@@ -1,0 +1,30 @@
+{
+    "name": "Utilisateur",
+    "fields": [
+        {
+            "fieldName": "speudo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "commentaire",
+            "otherEntityRelationshipName": "utilisateur",
+            "relationshipName": "commentaires"
+        }
+    ],
+    "changelogDate": "20191009140716",
+    "entityTableName": "utilisateur",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

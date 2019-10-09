@@ -1,0 +1,66 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-article-heading" jhiTranslate="hillcodeApp.article.home.createOrEditLabel">Create or edit a Article</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!editForm.get('id').value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id"
+                        readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="hillcodeApp.article.cheminFichier" for="field_cheminFichier">Chemin Fichier</label>
+                    <input type="text" class="form-control" name="cheminFichier" id="field_cheminFichier"
+                           formControlName="cheminFichier"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="hillcodeApp.article.auteur" for="field_auteur">Auteur</label>
+                    <input type="text" class="form-control" name="auteur" id="field_auteur"
+                           formControlName="auteur"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="hillcodeApp.article.dateCreation" for="field_dateCreation">Date Creation</label>
+                    <div class="d-flex">
+                        <input id="field_dateCreation" type="datetime-local" class="form-control" name="dateCreation" formControlName="dateCreation" placeholder="YYYY-MM-DD HH:mm"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="hillcodeApp.article.dateDerniereModif" for="field_dateDerniereModif">Date Derniere Modif</label>
+                    <div class="d-flex">
+                        <input id="field_dateDerniereModif" type="datetime-local" class="form-control" name="dateDerniereModif" formControlName="dateDerniereModif" placeholder="YYYY-MM-DD HH:mm"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="hillcodeApp.article.description" for="field_description">Description</label>
+                    <input type="text" class="form-control" name="description" id="field_description"
+                           formControlName="description"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="hillcodeApp.article.jaime" for="field_jaime">Jaime</label>
+                    <input type="number" class="form-control" name="jaime" id="field_jaime"
+                           formControlName="jaime"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="hillcodeApp.article.jaimepas" for="field_jaimepas">Jaimepas</label>
+                    <input type="number" class="form-control" name="jaimepas" id="field_jaimepas"
+                           formControlName="jaimepas"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="hillcodeApp.article.partage" for="field_partage">Partage</label>
+                    <input type="number" class="form-control" name="partage" id="field_partage"
+                           formControlName="partage"/>
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

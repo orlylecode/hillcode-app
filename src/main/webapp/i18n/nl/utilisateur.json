@@ -1,0 +1,24 @@
+{
+  "hillcodeApp": {
+    "utilisateur": {
+      "home": {
+        "title": "Utilisateurs",
+        "createLabel": "Maak een nieuwe Utilisateur",
+        "createOrEditLabel": "Maak of wijzig een Utilisateur",
+        "notFound": "No Utilisateurs found"
+      },
+      "created": "A new Utilisateur is created with identifier {{ param }}",
+      "updated": "A Utilisateur is updated with identifier {{ param }}",
+      "deleted": "A Utilisateur is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Utilisateur {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Utilisateur"
+      },
+      "speudo": "Speudo",
+      "email": "Email",
+      "commentaires": "Commentaires"
+    }
+  }
+}
