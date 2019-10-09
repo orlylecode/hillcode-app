@@ -1,0 +1,30 @@
+{
+  "hillcodeApp": {
+    "article": {
+      "home": {
+        "title": "Articles",
+        "createLabel": "Article erstellen",
+        "createOrEditLabel": "Article erstellen oder bearbeiten",
+        "notFound": "No Articles found"
+      },
+      "created": "Article erstellt mit ID {{ param }}",
+      "updated": "Article aktualisiert mit ID {{ param }}",
+      "deleted": "Article gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Article {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Article"
+      },
+      "cheminFichier": "Chemin Fichier",
+      "auteur": "Auteur",
+      "dateCreation": "Date Creation",
+      "dateDerniereModif": "Date Derniere Modif",
+      "description": "Description",
+      "jaime": "Jaime",
+      "jaimepas": "Jaimepas",
+      "partage": "Partage",
+      "commentaires": "Commentaires"
+    }
+  }
+}

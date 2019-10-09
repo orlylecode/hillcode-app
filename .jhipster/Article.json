@@ -1,0 +1,54 @@
+{
+    "name": "Article",
+    "fields": [
+        {
+            "fieldName": "cheminFichier",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "auteur",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateCreation",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "dateDerniereModif",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "jaime",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "jaimepas",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "partage",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "commentaire",
+            "otherEntityRelationshipName": "article",
+            "relationshipName": "commentaires"
+        }
+    ],
+    "changelogDate": "20191009140714",
+    "entityTableName": "article",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
