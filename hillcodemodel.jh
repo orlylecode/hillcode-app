@@ -1,0 +1,38 @@
+entity Article {
+	cheminFichier 		String,
+    auteur		  		String,
+    dateCreation  		Instant,
+    dateDerniereModif 	Instant,
+    description			String,
+    jaime				Integer,
+    jaimepas		    Integer,
+    partage				Integer,
+}
+
+entity Commentaire {
+	dateCreation 		Integer,
+	commentaire 		String,
+}
+
+entity Utilisateur {
+	speudo String,
+	email  String,
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Article				{commentaires} to Commentaire,
+	Utilisateur			{commentaires} to Commentaire
+}
+// Set pagination options
+paginate * with infinite-scroll
+paginate * with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceClass
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
